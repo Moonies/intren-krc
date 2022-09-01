@@ -1,0 +1,41 @@
+image: node:latest
+
+cache:
+  paths:
+    - node-modules/
+stages:
+  - install
+  - build
+  - deploy
+
+install:
+  stage: install
+  script:
+    - rm -rf node_modules
+    - rm -f package-lock.json
+    - npm cache clean --force
+    - echo "Start to node-modules install"
+    - npm install react react-dom react-scripts
+    - echo "Finish install"
+
+build:
+  stage: build
+  script:
+    - echo "Start build App"
+    - npm install 
+    - npm run build
+    - echo "Finish Build"
+  artifacts:
+    expire_in: 1 hour
+    paths:
+      - build
+      - node_modules/
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Start Deploy"
+    - npm install -g firebase-tools
+    - firebase deploy --token "$FIREBASE_TOKEN"
+    # - echo $FIREBASE_TOKEN
+    - echo "Enjoy"

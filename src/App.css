@@ -2,5 +2,5 @@
   text-align: center;
   height: 667px;
   width: 375px;
-  overflow: scroll;
+  overflow-y: scroll;
 }

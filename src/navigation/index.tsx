@@ -3,8 +3,8 @@
 //else used NextJs for seo -> new Create eco system
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import React, { useCallback } from 'react'
-import AccountLoginScreen from '../screens/accountLoginScreen'
-import Header from '../components/header'
+import AccountLoginScreen from '../screens/AccountLoginScreen'
+import Header from '../components/Header'
 // import LoginScreen from '../screens/login'
 // import RandomRewardScreen from '../screens/randomRewardScreen'
 export const GroupRoute = {
@@ -21,8 +21,7 @@ export default function Router() {
       default:
         break
     }
-  }, [])
-  console.log(currentGroupHeader())
+  }, [pathname])
   return (
     <BrowserRouter>
       <Header groupHeader={currentGroupHeader()} />
