@@ -1,2 +1,2 @@
-// 現状の登録内容です。お間違いなければ暗証番号を入力し、｢次へ｣をタップしてお進みください。
-export default ''
+export * from './AccountProfileScreen'
+export { default } from './AccountProfileScreen'

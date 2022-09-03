@@ -5,7 +5,7 @@ export type TitleHeader = {
 }
 export default function TitleHeader({ title }: TitleHeader) {
   return (
-    <styled.HeaderTitle className="flex flex-auto justify-center items-center mt-2">
+    <styled.HeaderTitle className="flex justify-center items-center mt-2">
       {title}
     </styled.HeaderTitle>
   )

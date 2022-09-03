@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import React, { useCallback } from 'react'
 import AccountLoginScreen from '../screens/AccountLoginScreen'
 import Header from '../components/Header'
+import AccountProfileScreen from 'screens/AccountProfileScreen'
 // import LoginScreen from '../screens/login'
 // import RandomRewardScreen from '../screens/randomRewardScreen'
 export const GroupRoute = {
@@ -27,7 +28,7 @@ export default function Router() {
       <Header groupHeader={currentGroupHeader()} />
       <Routes>
         <Route path="/" element={<AccountLoginScreen />} />
-        {/* <Route path="/login" element={<LoginScreen />} /> */}
+        <Route path="/AccountProfile" element={<AccountProfileScreen />} />
         {/* <Route path="/random" element={<RandomRewardScreen />} /> */}
       </Routes>
     </BrowserRouter>

@@ -7,7 +7,7 @@ export const colors: any = {
   lightNavy: '#273857',
   white: '#ffffff',
   black: '#000000',
-  gray: ['#bfbfbf'],
+  gray: ['#bfbfbf', '#6d6d6d'],
 }
 colors.text = colors.white
 colors.primary = colors.blue

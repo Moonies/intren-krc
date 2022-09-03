@@ -6,10 +6,19 @@ const InputText = styled.input<{
   //   fontSize: number
   width?: number
 }>`
-    height: '48px',
-    fontSize: ${fontSizes[5]}'px',
-    border: 'solid 1px ${colors.gray[0]}',
-    borderRadius: '8px',
+  height: 48px;
+  font-size: ${fontSizes[5]}px;
+  border: solid 1px ${colors.gray[0]};
+  border-radius: 8px;
+  color: ${colors.gray[1]};
+  :focus {
+    outline: 3px solid ${colors.lightBlue};
+    color: ${colors.lightNavy};
+  }
+  ::placeholder{
+    color: #d7d6d6;
+  }
+  ,
 `
 
 export default {

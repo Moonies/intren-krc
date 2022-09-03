@@ -4,7 +4,6 @@ const Container = styled.div`
   background-color: ${colors.white};
   padding: 4%;
   text-align: center;
-  justify-content: center;
 `
 
 export default {
