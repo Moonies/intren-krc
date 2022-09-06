@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 import { colors, fontSizes } from 'theme'
 const SubHeaderTitle = styled.div<{
   isEmpty: boolean
+  height: number
 }>`
   ${props => {
     switch (props.isEmpty) {
@@ -9,7 +10,7 @@ const SubHeaderTitle = styled.div<{
         return css`
           background-color: ${colors.primary};
           color: ${colors.text};
-          height: 8px;
+          height: ${props.height}px;
         `
 
       default:

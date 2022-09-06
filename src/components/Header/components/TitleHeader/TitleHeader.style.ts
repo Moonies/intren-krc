@@ -3,7 +3,7 @@ import { colors, fontSizes } from 'theme'
 const HeaderTitle = styled.div`
   background-color: ${colors.primary};
   height: 56px;
-  color: ${colors.text};
+  color: ${colors.white};
   font-size: ${fontSizes[4]}px;
 `
 

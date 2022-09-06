@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useCallback, useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import SubHeader from 'components/SubHeader'
 import RoundButton from 'components/RoundButton'
 import styled from './AccuntLoginScreen.style'

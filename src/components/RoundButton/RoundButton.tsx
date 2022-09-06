@@ -15,13 +15,13 @@ export default function RoundButton({
   width,
 }: RoundButton) {
   return (
-    <styled.SubHeaderTitle
+    <styled.Button
       onClick={onClick}
       color={color}
       fontSize={fontSize}
       width={width}
     >
       {title}
-    </styled.SubHeaderTitle>
+    </styled.Button>
   )
 }

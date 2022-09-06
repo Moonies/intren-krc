@@ -9,7 +9,7 @@ export const colors: any = {
   black: '#000000',
   gray: ['#bfbfbf', '#6d6d6d'],
 }
-colors.text = colors.white
+colors.text = colors.black
 colors.primary = colors.blue
 colors.secondary = colors.lightBlue
 export default colors

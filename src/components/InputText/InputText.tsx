@@ -9,9 +9,17 @@ export type InputTextProps = {
 }
 export default function InputText({
   typeInput = 'text',
-  typeText = 'input',
+  // typeText = 'input',
   placeHolder,
+  size = 276,
   onChange,
 }: InputTextProps) {
-  return <styled.InputText onChange={onChange} placeholder={placeHolder} />
+  return (
+    <styled.InputText
+      onChange={onChange}
+      placeholder={placeHolder}
+      type={typeInput}
+      width={size}
+    />
+  )
 }
