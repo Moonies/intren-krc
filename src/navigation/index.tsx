@@ -8,10 +8,14 @@ import Header from 'components/Header'
 import AccountProfileScreen from 'screens/AccountProfileScreen'
 import useNavigation from './hooks/useNavigation'
 import AccountProfileAddressScreen from 'screens/AccountProfileAddressScreen'
-// import LoginScreen from '../screens/login'
-// import RandomRewardScreen from '../screens/randomRewardScreen'
+import AccountProfileResultScreen from 'screens/AccountProfileResultScreen'
 export const GroupRoute = {
-  register: ['/', '/AccountProfile', '/AccountProfileAddress'],
+  register: [
+    '/',
+    '/AccountProfile',
+    '/AccountProfileAddress',
+    '/AccountProfileResult',
+  ],
 }
 export default function Router() {
   const { location } = useNavigation()
@@ -32,8 +36,12 @@ export default function Router() {
         <Route path="/" element={<AccountLoginScreen />} />
         <Route path="AccountProfile" element={<AccountProfileScreen />} />
         <Route
-          path="/AccountProfileAddress"
+          path="AccountProfileAddress"
           element={<AccountProfileAddressScreen />}
+        />
+        <Route
+          path="AccountProfileResult"
+          element={<AccountProfileResultScreen />}
         />
       </Routes>
     </>

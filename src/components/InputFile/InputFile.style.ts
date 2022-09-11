@@ -1,7 +1,11 @@
 import styled from 'styled-components'
-import { colors, fontSizes } from 'theme'
+import { fontSizes } from 'theme'
 
-const Button = styled.button<{
+const InputUploadFile = styled.input`
+  display: none;
+`
+
+const ButtonUpload = styled.div<{
   color: string
   fontSize: number
   fontColor: string
@@ -20,6 +24,8 @@ const Button = styled.button<{
   outline: 3px solid ${props => props.outlineColor};
   font-weight: ${props => props.fontWeight};
 `
+
 export default {
-  Button,
+  InputUploadFile,
+  ButtonUpload,
 }
