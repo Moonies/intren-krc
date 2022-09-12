@@ -4,9 +4,17 @@ cache:
   paths:
     - node-modules/
 stages:
+  - cleanup
   - install
   - build
   - deploy
+
+cleanup_job:
+  stage: cleanup
+  script:
+    - echo "Cleaning up"
+    - rm -rf "%CACHE_PATH%/%CI_PIPELINE_ID%"
+  when: always
 
 install:
   stage: install
