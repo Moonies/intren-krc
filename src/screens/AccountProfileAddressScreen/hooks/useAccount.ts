@@ -23,7 +23,7 @@ export default function useAccount() {
       //   const fileSelected = rawFileUpload[0]
       // }
     },
-    [accountData]
+    []
   )
   return {
     accountData,

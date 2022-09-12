@@ -25,7 +25,9 @@ export default function AccountLoginScreen() {
             fontSize={24}
             color={colors.primary}
             width={256}
-            onClick={() => navigation('/AccountProfile')}
+            onClick={() =>
+              navigation('/AccountProfile', { state: receiptNumber })
+            }
           />
         </div>
       </styled.Container>

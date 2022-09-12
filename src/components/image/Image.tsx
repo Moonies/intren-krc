@@ -22,7 +22,7 @@ export default function Image({
       if (typeof resultBase64 !== 'string') return
       setNewImageBase64(resultBase64)
     })
-  }, [])
+  }, [fileSrc])
 
   return (
     <>
