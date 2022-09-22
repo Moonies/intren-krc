@@ -9,9 +9,11 @@ import AccountProfileScreen from 'screens/AccountProfileScreen'
 import useNavigation from './hooks/useNavigation'
 import AccountProfileAddressScreen from 'screens/AccountProfileAddressScreen'
 import AccountProfileResultScreen from 'screens/AccountProfileResultScreen'
+import UserLoginScreen from 'screens/UserLoginScreen/UserLoginScreen'
 export const GroupRoute = {
   register: [
     '/',
+    '/AccountLogin',
     '/AccountProfile',
     '/AccountProfileAddress',
     '/AccountProfileResult',
@@ -33,7 +35,8 @@ export default function Router() {
     <>
       <Header groupHeader={currentGroupHeader()} />
       <Routes>
-        <Route path="/" element={<AccountLoginScreen />} />
+        <Route path="/" element={<UserLoginScreen />} />
+        <Route path="AccountLogin" element={<AccountLoginScreen />} />
         <Route path="AccountProfile" element={<AccountProfileScreen />} />
         <Route
           path="AccountProfileAddress"

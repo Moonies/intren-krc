@@ -10,6 +10,7 @@ export type RoundButtonProps = ButtonHTMLAttributes<'button'> & {
   width?: number
   fontWeight?: number
   height?: number
+  boxShadowColor?: string
   onClick: () => void
 }
 export default function RoundButton({
@@ -22,6 +23,7 @@ export default function RoundButton({
   width,
   fontWeight = 0,
   height = 56,
+  boxShadowColor = colors.white,
 }: RoundButtonProps) {
   return (
     <styled.Button
@@ -33,6 +35,7 @@ export default function RoundButton({
       outlineColor={outlineColor}
       fontWeight={fontWeight}
       height={height}
+      boxShadowColor={boxShadowColor}
     >
       {title}
     </styled.Button>

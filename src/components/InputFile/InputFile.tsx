@@ -11,6 +11,7 @@ export type InputFileProps = {
   width?: number
   fontWeight?: number
   height?: number
+  boxShadowColor?: string
   onChange: (e: ChangeEvent<HTMLInputElement>) => void
 }
 export default function InputFile({
@@ -22,6 +23,7 @@ export default function InputFile({
   width,
   color,
   outlineColor = color,
+  boxShadowColor = colors.white,
   onChange,
 }: InputFileProps) {
   const uploadInputRef = useRef<HTMLInputElement>(null)
@@ -47,6 +49,7 @@ export default function InputFile({
         color={color}
         height={height}
         fontWeight={fontWeight}
+        boxShadowColor={boxShadowColor}
         onClick={onClickUpload}
       />
     </>

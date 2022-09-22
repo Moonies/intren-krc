@@ -9,6 +9,7 @@ const Button = styled.button<{
   width?: number
   fontWeight: number
   height: number
+  boxShadowColor: string
 }>`
   background-color: ${props => props.color};
   color: ${props => props.fontColor};
@@ -16,7 +17,7 @@ const Button = styled.button<{
   border-radius: 24px;
   height: ${props => props.height}px;
   width: ${props => props.width || '256'}px;
-  box-shadow: 0px 7px 8px;
+  box-shadow: 0px 7px 8px ${props => props.boxShadowColor};
   outline: 3px solid ${props => props.outlineColor};
   font-weight: ${props => props.fontWeight};
 `

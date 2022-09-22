@@ -15,7 +15,7 @@ export default function AccountProfileScreen() {
     <div className="flex flex-1 flex-col">
       <SubHeader />
       <div className="flex justify-center font-semibold">
-        <Text fontSize={18}>
+        <Text fontSize={20}>
           現状の登録内容です。{'\n'}
           お間違いなければ暗証番号を入力し、{'\n'}
           ｢次へ｣をタップしてお進みください。
@@ -25,47 +25,47 @@ export default function AccountProfileScreen() {
 
       <styled.Container>
         <ItemList
-          left={<Text fontSize={20}>お名前</Text>}
-          right={<Text fontSize={20}>三菱 {'    '}太郎</Text>}
-          className="flex justify-start text-left"
+          left={<Text fontSize={22}>お名前</Text>}
+          right={<Text fontSize={22}>三菱 {'    '}太郎</Text>}
+          className="flex  text-left"
         />
         <ItemList
-          left={<Text fontSize={20}>生年月日</Text>}
-          right={<Text fontSize={20}>1919年8月15日</Text>}
-          className="flex justify-start text-left mt-4"
+          left={<Text fontSize={22}>生年月日</Text>}
+          right={<Text fontSize={22}>1919年8月15日</Text>}
+          className="flex text-left mt-4"
         />
         <ItemList
-          left={<Text fontSize={20}>店番</Text>}
-          right={<Text fontSize={20}>001</Text>}
-          className="flex justify-start text-left mt-4"
+          left={<Text fontSize={22}>店番</Text>}
+          right={<Text fontSize={22}>001</Text>}
+          className="flex text-left mt-4"
         />
         <ItemList
-          left={<Text fontSize={20}>店名</Text>}
-          right={<Text fontSize={20}>本店</Text>}
-          className="flex justify-start text-left mt-4"
+          left={<Text fontSize={22}>店名</Text>}
+          right={<Text fontSize={22}>本店</Text>}
+          className="flex text-left mt-4"
         />
         <ItemList
-          left={<Text fontSize={20}>口座番号</Text>}
-          right={<Text fontSize={20}>999999</Text>}
-          className="flex justify-start text-left mt-4"
+          left={<Text fontSize={22}>口座番号</Text>}
+          right={<Text fontSize={22}>999999</Text>}
+          className="flex text-left mt-4"
         />
         <ItemList
-          left={<Text fontSize={20}>暗証番号</Text>}
+          left={<Text fontSize={22}>暗証番号</Text>}
           right={
             <InputText
               onChange={e => console.log(e.target.value)}
               placeHolder=""
-              typeInput="password"
               size={126}
             />
           }
-          className="flex justify-start text-left mt-4 align-middle"
+          className="flex text-left mt-4 align-middle"
         />
         <div className="mt-4">
           <RoundButton
             title="次へ"
             fontSize={24}
-            color={colors.primary}
+            color={colors.darkBlue}
+            boxShadowColor={colors.gray[1]}
             width={256}
             onClick={() => navigation('/AccountProfileAddress')}
           />

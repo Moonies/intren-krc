@@ -9,7 +9,7 @@ const InputText = styled.input<{
   height: 48px;
   font-size: ${fontSizes[5]}px;
   border: solid 1px ${colors.gray[0]};
-  border-radius: 8px;
+  box-shadow: inset 1px 2px 6px;
   color: ${colors.gray[1]};
   width: ${props => props.width}px;
   :focus {

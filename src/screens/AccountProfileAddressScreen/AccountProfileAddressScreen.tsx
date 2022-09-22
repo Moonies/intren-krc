@@ -19,7 +19,7 @@ export default function AccountProfileAddressScreen() {
     <div className="flex flex-1 flex-col">
       <SubHeader />
       <div className="flex justify-center font-semibold mt-2">
-        <Text fontSize={18}>変更内容を入力ください。</Text>
+        <Text fontSize={22}>変更内容を入力ください。</Text>
       </div>
       <SubHeader height={2} />
       <styled.Container>
@@ -29,7 +29,7 @@ export default function AccountProfileAddressScreen() {
           </div>
           <div className="ml-4">
             <div className="flex w-full">
-              <Text fontSize={18}>郵便番号（ハイフン不要）</Text>
+              <Text fontSize={20}>郵便番号（ハイフン不要）</Text>
             </div>
             <div className="flex flex-col  items-start mt-2">
               <InputText
@@ -47,7 +47,7 @@ export default function AccountProfileAddressScreen() {
           </div>
           <div className="ml-4">
             <div className="flex w-full">
-              <Text fontSize={18}>住所</Text>
+              <Text fontSize={20}>住所</Text>
             </div>
             <div className="flex flex-col  items-start mt-2">
               <InputTextArea
@@ -65,7 +65,7 @@ export default function AccountProfileAddressScreen() {
           </div>
           <div className="ml-4">
             <div className="flex w-full">
-              <Text fontSize={18}>携帯番号</Text>
+              <Text fontSize={20}>携帯番号</Text>
             </div>
             <div className="flex flex-col  items-start mt-2">
               <InputText
@@ -86,7 +86,7 @@ export default function AccountProfileAddressScreen() {
           </div>
           <div className="ml-4">
             <div className="flex w-full">
-              <Text fontSize={18}>ご自宅電話番号</Text>
+              <Text fontSize={20}>ご自宅電話番号</Text>
             </div>
             <div className="flex flex-col  items-start mt-2">
               <InputText
@@ -106,7 +106,7 @@ export default function AccountProfileAddressScreen() {
             <ListItem />
           </div>
           <div className="flex w-full ml-4">
-            <Text fontSize={18}>携帯アドレス</Text>
+            <Text fontSize={20}>携帯アドレス</Text>
           </div>
         </div>
         <div className="flex mt-2 justify-center">
@@ -115,17 +115,19 @@ export default function AccountProfileAddressScreen() {
               title="クリックして空メールを送信"
               onClick={() => console.log('click')}
               color={colors.lightBlue}
-              fontSize={16}
+              boxShadowColor={colors.gray[1]}
+              fontSize={22}
               fontColor={colors.primary}
               outlineColor={colors.primary}
               fontWeight={600}
               height={46}
+              width={326}
             />
           </a>
         </div>
 
         <div className="flex flex-row justify-around mt-4  ">
-          <Text fontSize={18}>
+          <Text fontSize={20}>
             受信メールに　{'\n'}記載の番号を　{'\n'}入力ください。
           </Text>
           <div className="flex self-center">
@@ -146,18 +148,18 @@ export default function AccountProfileAddressScreen() {
             <ListItem />
           </div>
           <div className="flex w-full ml-4">
-            <Text fontSize={18}>本人確認資料WEB提出</Text>
+            <Text fontSize={20}>本人確認資料WEB提出</Text>
           </div>
         </div>
         <div className="flex mt-2">
           <div className="align-top">
-            <Text fontSize={18} color={colors.primary}>
+            <Text fontSize={20} color={colors.primary}>
               ※
             </Text>
           </div>
           <div className="flex w-full ml-4 text-justify">
             <Text
-              fontSize={18}
+              fontSize={20}
               color={colors.primary}
               textDecoration={'underline'}
             >
@@ -179,9 +181,10 @@ export default function AccountProfileAddressScreen() {
                   frontSideImage: e.target.files,
                 })
               }
-              fontSize={16}
+              fontSize={20}
               fontColor={colors.primary}
               outlineColor={colors.primary}
+              boxShadowColor={colors.black}
               fontWeight={600}
               height={46}
               width={186}
@@ -202,9 +205,10 @@ export default function AccountProfileAddressScreen() {
                   backSideImage: e.target.files,
                 })
               }
-              fontSize={16}
+              fontSize={20}
               fontColor={colors.primary}
               outlineColor={colors.primary}
+              boxShadowColor={colors.black}
               fontWeight={600}
               height={46}
               width={186}
@@ -217,8 +221,10 @@ export default function AccountProfileAddressScreen() {
             onClick={() =>
               navigation('/AccountProfileResult', { state: accountData })
             }
-            color={colors.primary}
-            fontSize={24}
+            color={colors.darkBlue}
+            boxShadowColor={colors.gray[1]}
+            fontSize={34}
+            width={216}
           />
         </div>
       </styled.Container>

@@ -18,7 +18,7 @@ export default function AccountProfileResultScreen() {
     <div className="flex flex-1 flex-col">
       <SubHeader />
       <div className="flex justify-center font-semibold mt-2">
-        <Text fontSize={18}>
+        <Text fontSize={22}>
           内容にお間違いなければ、{'\n'} 登録ボタンを押してください。
         </Text>
       </div>
@@ -30,10 +30,10 @@ export default function AccountProfileResultScreen() {
           </div>
           <div className="ml-4 w-full">
             <div className="flex w-full">
-              <Text fontSize={18}>郵便番号</Text>
+              <Text fontSize={20}>郵便番号</Text>
             </div>
             <div className="flex flex-col mt-2 items-start ml-12 text-start">
-              <Text fontSize={18}>
+              <Text fontSize={20}>
                 {accountProfileResultData?.postCode || '103-0011'}
               </Text>
             </div>
@@ -45,10 +45,10 @@ export default function AccountProfileResultScreen() {
           </div>
           <div className="ml-4 w-full">
             <div className="flex w-full">
-              <Text fontSize={18}>住所</Text>
+              <Text fontSize={20}>住所</Text>
             </div>
             <div className="flex flex-col mt-2 items-start ml-12 text-start">
-              <Text fontSize={18}>
+              <Text fontSize={20}>
                 {accountProfileResultData?.address ||
                   '東京都中央区日本橋大伝馬町１２－１２'}
               </Text>
@@ -61,10 +61,10 @@ export default function AccountProfileResultScreen() {
           </div>
           <div className="ml-4 w-full">
             <div className="flex w-full">
-              <Text fontSize={18}>携帯番号</Text>
+              <Text fontSize={20}>携帯番号</Text>
             </div>
             <div className="flex flex-col mt-2 items-start ml-12 text-start">
-              <Text fontSize={18}>
+              <Text fontSize={20}>
                 {accountProfileResultData?.mobileNumber || '999-9999-9999'}
               </Text>
             </div>
@@ -76,10 +76,10 @@ export default function AccountProfileResultScreen() {
           </div>
           <div className="ml-4 w-full">
             <div className="flex w-full">
-              <Text fontSize={18}>ご自宅電話番号</Text>
+              <Text fontSize={20}>ご自宅電話番号</Text>
             </div>
             <div className="flex flex-col mt-2 items-start ml-12 text-start">
-              <Text fontSize={18}>
+              <Text fontSize={20}>
                 {accountProfileResultData?.addressNumber || '登録無し'}
               </Text>
             </div>
@@ -91,10 +91,10 @@ export default function AccountProfileResultScreen() {
           </div>
           <div className="ml-4 w-full">
             <div className="flex w-full">
-              <Text fontSize={18}>携帯アドレス</Text>
+              <Text fontSize={20}>携帯アドレス</Text>
             </div>
             <div className="flex flex-col  mt-2 items-start ml-12 text-start">
-              <Text fontSize={18}>登録済み</Text>
+              <Text fontSize={20}>登録済み</Text>
             </div>
           </div>
         </div>
@@ -104,13 +104,13 @@ export default function AccountProfileResultScreen() {
           </div>
           <div className="ml-4 w-full">
             <div className="flex w-full">
-              <Text fontSize={18}>本人確認資料</Text>
+              <Text fontSize={20}>本人確認資料</Text>
             </div>
           </div>
         </div>
-        <div className="flex w-full justify-around">
+        <div className="flex w-full justify-around mt-6">
           <div className="self-center">
-            <Text fontSize={18}>写真・表</Text>
+            <Text fontSize={20}>写真・表</Text>
           </div>
           <Image
             fileSrc={accountProfileResultData?.frontSideImage}
@@ -119,7 +119,7 @@ export default function AccountProfileResultScreen() {
         </div>
         <div className="flex w-full justify-around mt-6">
           <div className="self-center">
-            <Text fontSize={18}>写真・裏</Text>
+            <Text fontSize={20}>写真・裏</Text>
           </div>
           <Image
             fileSrc={accountProfileResultData?.backSideImage}
@@ -130,8 +130,10 @@ export default function AccountProfileResultScreen() {
           <RoundButton
             title="登録"
             onClick={() => console.log('click')}
-            color={colors.primary}
-            fontSize={24}
+            color={colors.darkBlue}
+            boxShadowColor={colors.gray[1]}
+            fontSize={34}
+            width={216}
           />
         </div>
       </styled.Container>
