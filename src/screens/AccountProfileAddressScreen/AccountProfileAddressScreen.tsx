@@ -29,7 +29,7 @@ export default function AccountProfileAddressScreen() {
           </div>
           <div className="ml-4">
             <div className="flex w-full">
-              <Text fontSize={20}>郵便番号（ハイフン不要）</Text>
+              <Text fontSize={22}>郵便番号（ハイフン不要）</Text>
             </div>
             <div className="flex flex-col  items-start mt-2">
               <InputText
@@ -47,7 +47,7 @@ export default function AccountProfileAddressScreen() {
           </div>
           <div className="ml-4">
             <div className="flex w-full">
-              <Text fontSize={20}>住所</Text>
+              <Text fontSize={22}>住所</Text>
             </div>
             <div className="flex flex-col  items-start mt-2">
               <InputTextArea
@@ -65,7 +65,7 @@ export default function AccountProfileAddressScreen() {
           </div>
           <div className="ml-4">
             <div className="flex w-full">
-              <Text fontSize={20}>携帯番号</Text>
+              <Text fontSize={22}>携帯番号</Text>
             </div>
             <div className="flex flex-col  items-start mt-2">
               <InputText
@@ -86,7 +86,7 @@ export default function AccountProfileAddressScreen() {
           </div>
           <div className="ml-4">
             <div className="flex w-full">
-              <Text fontSize={20}>ご自宅電話番号</Text>
+              <Text fontSize={22}>ご自宅電話番号</Text>
             </div>
             <div className="flex flex-col  items-start mt-2">
               <InputText
@@ -106,7 +106,7 @@ export default function AccountProfileAddressScreen() {
             <ListItem />
           </div>
           <div className="flex w-full ml-4">
-            <Text fontSize={20}>携帯アドレス</Text>
+            <Text fontSize={22}>携帯アドレス</Text>
           </div>
         </div>
         <div className="flex mt-2 justify-center">
@@ -127,7 +127,7 @@ export default function AccountProfileAddressScreen() {
         </div>
 
         <div className="flex flex-row justify-around mt-4  ">
-          <Text fontSize={20}>
+          <Text fontSize={22}>
             受信メールに　{'\n'}記載の番号を　{'\n'}入力ください。
           </Text>
           <div className="flex self-center">
@@ -148,22 +148,22 @@ export default function AccountProfileAddressScreen() {
             <ListItem />
           </div>
           <div className="flex w-full ml-4">
-            <Text fontSize={20}>本人確認資料WEB提出</Text>
+            <Text fontSize={22}>本人確認資料WEB提出</Text>
           </div>
         </div>
         <div className="flex mt-2">
           <div className="align-top">
-            <Text fontSize={20} color={colors.primary}>
+            <Text fontSize={22} color={colors.primary}>
               ※
             </Text>
           </div>
-          <div className="flex w-full ml-4 text-justify">
+          <div className="flex w-full ml-1 text-justify">
             <Text
               fontSize={20}
               color={colors.primary}
               textDecoration={'underline'}
             >
-              当行が認めている本人確認 {'\n'}資料はコチラをご確認ください。
+              当行が認めている本人確認{'\n'}資料はコチラをご確認ください。
             </Text>
           </div>
         </div>
@@ -181,10 +181,10 @@ export default function AccountProfileAddressScreen() {
                   frontSideImage: e.target.files,
                 })
               }
-              fontSize={20}
+              fontSize={22}
               fontColor={colors.primary}
               outlineColor={colors.primary}
-              boxShadowColor={colors.black}
+              boxShadowColor={colors.gray[1]}
               fontWeight={600}
               height={46}
               width={186}
@@ -205,10 +205,10 @@ export default function AccountProfileAddressScreen() {
                   backSideImage: e.target.files,
                 })
               }
-              fontSize={20}
+              fontSize={22}
               fontColor={colors.primary}
               outlineColor={colors.primary}
-              boxShadowColor={colors.black}
+              boxShadowColor={colors.gray[1]}
               fontWeight={600}
               height={46}
               width={186}

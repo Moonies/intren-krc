@@ -30,10 +30,10 @@ export default function AccountProfileResultScreen() {
           </div>
           <div className="ml-4 w-full">
             <div className="flex w-full">
-              <Text fontSize={20}>郵便番号</Text>
+              <Text fontSize={22}>郵便番号</Text>
             </div>
             <div className="flex flex-col mt-2 items-start ml-12 text-start">
-              <Text fontSize={20}>
+              <Text fontSize={22}>
                 {accountProfileResultData?.postCode || '103-0011'}
               </Text>
             </div>
@@ -45,10 +45,10 @@ export default function AccountProfileResultScreen() {
           </div>
           <div className="ml-4 w-full">
             <div className="flex w-full">
-              <Text fontSize={20}>住所</Text>
+              <Text fontSize={22}>住所</Text>
             </div>
             <div className="flex flex-col mt-2 items-start ml-12 text-start">
-              <Text fontSize={20}>
+              <Text fontSize={22}>
                 {accountProfileResultData?.address ||
                   '東京都中央区日本橋大伝馬町１２－１２'}
               </Text>
@@ -61,10 +61,10 @@ export default function AccountProfileResultScreen() {
           </div>
           <div className="ml-4 w-full">
             <div className="flex w-full">
-              <Text fontSize={20}>携帯番号</Text>
+              <Text fontSize={22}>携帯番号</Text>
             </div>
             <div className="flex flex-col mt-2 items-start ml-12 text-start">
-              <Text fontSize={20}>
+              <Text fontSize={22}>
                 {accountProfileResultData?.mobileNumber || '999-9999-9999'}
               </Text>
             </div>
@@ -76,10 +76,10 @@ export default function AccountProfileResultScreen() {
           </div>
           <div className="ml-4 w-full">
             <div className="flex w-full">
-              <Text fontSize={20}>ご自宅電話番号</Text>
+              <Text fontSize={22}>ご自宅電話番号</Text>
             </div>
             <div className="flex flex-col mt-2 items-start ml-12 text-start">
-              <Text fontSize={20}>
+              <Text fontSize={22}>
                 {accountProfileResultData?.addressNumber || '登録無し'}
               </Text>
             </div>
@@ -91,10 +91,10 @@ export default function AccountProfileResultScreen() {
           </div>
           <div className="ml-4 w-full">
             <div className="flex w-full">
-              <Text fontSize={20}>携帯アドレス</Text>
+              <Text fontSize={22}>携帯アドレス</Text>
             </div>
             <div className="flex flex-col  mt-2 items-start ml-12 text-start">
-              <Text fontSize={20}>登録済み</Text>
+              <Text fontSize={22}>登録済み</Text>
             </div>
           </div>
         </div>
@@ -104,13 +104,13 @@ export default function AccountProfileResultScreen() {
           </div>
           <div className="ml-4 w-full">
             <div className="flex w-full">
-              <Text fontSize={20}>本人確認資料</Text>
+              <Text fontSize={22}>本人確認資料</Text>
             </div>
           </div>
         </div>
         <div className="flex w-full justify-around mt-6">
           <div className="self-center">
-            <Text fontSize={20}>写真・表</Text>
+            <Text fontSize={22}>写真・表</Text>
           </div>
           <Image
             fileSrc={accountProfileResultData?.frontSideImage}
@@ -119,7 +119,7 @@ export default function AccountProfileResultScreen() {
         </div>
         <div className="flex w-full justify-around mt-6">
           <div className="self-center">
-            <Text fontSize={20}>写真・裏</Text>
+            <Text fontSize={22}>写真・裏</Text>
           </div>
           <Image
             fileSrc={accountProfileResultData?.backSideImage}

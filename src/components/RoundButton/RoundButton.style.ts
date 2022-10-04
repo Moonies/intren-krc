@@ -18,7 +18,7 @@ const Button = styled.button<{
   height: ${props => props.height}px;
   width: ${props => props.width || '256'}px;
   box-shadow: 0px 7px 8px ${props => props.boxShadowColor};
-  outline: 3px solid ${props => props.outlineColor};
+  outline: 2px solid ${props => props.outlineColor};
   font-weight: ${props => props.fontWeight};
 `
 export default {

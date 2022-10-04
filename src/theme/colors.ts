@@ -2,7 +2,7 @@
 export const colors: any = {
   orange: '#F79727',
   blue: '#1c66e6',
-  darkBlue: '#175acd',
+  darkBlue: '#1963e3',
   lightBlue: '#b7ecff',
   lightNavy: '#273857',
   white: '#ffffff',

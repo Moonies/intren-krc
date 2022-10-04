@@ -46,7 +46,7 @@ export default function AccountProfileScreen() {
         />
         <ItemList
           left={<Text fontSize={22}>口座番号</Text>}
-          right={<Text fontSize={22}>999999</Text>}
+          right={<Text fontSize={22}>1234567</Text>}
           className="flex text-left mt-4"
         />
         <ItemList
