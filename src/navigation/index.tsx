@@ -1,8 +1,8 @@
 //prepare to navigation all Projects
 //if used react-router-dom use this file
 //else used NextJs for seo -> new Create eco system
-import { Routes, Route } from 'react-router-dom'
-import React, { useCallback } from 'react'
+import { Routes, Route, useNavigate } from 'react-router-dom'
+import React, { useCallback, useEffect } from 'react'
 import AccountLoginScreen from 'screens/AccountLoginScreen'
 import Header from 'components/Header'
 import AccountProfileScreen from 'screens/AccountProfileScreen'
@@ -10,6 +10,8 @@ import useNavigation from './hooks/useNavigation'
 import AccountProfileAddressScreen from 'screens/AccountProfileAddressScreen'
 import AccountProfileResultScreen from 'screens/AccountProfileResultScreen'
 import UserLoginScreen from 'screens/UserLoginScreen/UserLoginScreen'
+import { useSelector } from 'react-redux'
+import { RootState } from 'store'
 export const GroupRoute = {
   register: [
     '/',
@@ -21,6 +23,9 @@ export const GroupRoute = {
 }
 export default function Router() {
   const { location } = useNavigation()
+  const navigation = useNavigate()
+
+  const user = useSelector((state: RootState) => state.user)
 
   const currentGroupHeader = useCallback(() => {
     switch (true) {
@@ -31,6 +36,13 @@ export default function Router() {
         break
     }
   }, [location])
+
+  useEffect(() => {
+    if (user === null) {
+      navigation('/')
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user])
   return (
     <>
       <Header groupHeader={currentGroupHeader()} />

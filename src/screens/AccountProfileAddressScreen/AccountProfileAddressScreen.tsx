@@ -19,15 +19,15 @@ export default function AccountProfileAddressScreen() {
     <div className="flex flex-1 flex-col">
       <SubHeader />
       <div className="flex justify-center font-semibold mt-2">
-        <Text fontSize={22}>変更内容を入力ください。</Text>
+        <Text fontSize={24}>変更内容を入力ください。</Text>
       </div>
       <SubHeader height={2} />
       <styled.Container>
         <div className="flex ">
-          <div className="align-top mt-2">
-            <ListItem />
+          <div className="align-top mt-2 ml-1 ">
+            <ListItem color={colors.darkBlue} />
           </div>
-          <div className="ml-4">
+          <div className="ml-3">
             <div className="flex w-full">
               <Text fontSize={22}>郵便番号（ハイフン不要）</Text>
             </div>
@@ -41,11 +41,11 @@ export default function AccountProfileAddressScreen() {
             </div>
           </div>
         </div>
-        <div className="flex mt-2">
+        <div className="flex mt-2 ml-1">
           <div className="align-top mt-2">
-            <ListItem />
+            <ListItem color={colors.darkBlue} />
           </div>
-          <div className="ml-4">
+          <div className="ml-3">
             <div className="flex w-full">
               <Text fontSize={22}>住所</Text>
             </div>
@@ -60,10 +60,10 @@ export default function AccountProfileAddressScreen() {
           </div>
         </div>
         <div className="flex mt-2">
-          <div className="align-top mt-2">
-            <ListItem />
+          <div className="align-top mt-2 ml-1">
+            <ListItem color={colors.darkBlue} />
           </div>
-          <div className="ml-4">
+          <div className="ml-3">
             <div className="flex w-full">
               <Text fontSize={22}>携帯番号</Text>
             </div>
@@ -81,10 +81,10 @@ export default function AccountProfileAddressScreen() {
           </div>
         </div>
         <div className="flex mt-2">
-          <div className="align-top mt-2">
-            <ListItem />
+          <div className="align-top mt-2 ml-1">
+            <ListItem color={colors.darkBlue} />
           </div>
-          <div className="ml-4">
+          <div className="ml-3">
             <div className="flex w-full">
               <Text fontSize={22}>ご自宅電話番号</Text>
             </div>
@@ -102,10 +102,10 @@ export default function AccountProfileAddressScreen() {
           </div>
         </div>
         <div className="flex mt-2">
-          <div className="align-top mt-2">
-            <ListItem />
+          <div className="align-top mt-2 ml-1">
+            <ListItem color={colors.darkBlue} />
           </div>
-          <div className="flex w-full ml-4">
+          <div className="flex w-full ml-3">
             <Text fontSize={22}>携帯アドレス</Text>
           </div>
         </div>
@@ -117,7 +117,7 @@ export default function AccountProfileAddressScreen() {
               color={colors.lightBlue}
               boxShadowColor={colors.gray[1]}
               fontSize={22}
-              fontColor={colors.primary}
+              fontColor={colors.darkBlue}
               outlineColor={colors.primary}
               fontWeight={600}
               height={46}
@@ -144,10 +144,10 @@ export default function AccountProfileAddressScreen() {
           </div>
         </div>
         <div className="flex mt-2">
-          <div className="align-top mt-2">
+          <div className="align-top mt-2 ml-1">
             <ListItem />
           </div>
-          <div className="flex w-full ml-4">
+          <div className="flex w-full ml-3">
             <Text fontSize={22}>本人確認資料WEB提出</Text>
           </div>
         </div>
@@ -160,7 +160,7 @@ export default function AccountProfileAddressScreen() {
           <div className="flex w-full ml-1 text-justify">
             <Text
               fontSize={20}
-              color={colors.primary}
+              color={colors.darkBlue}
               textDecoration={'underline'}
             >
               当行が認めている本人確認{'\n'}資料はコチラをご確認ください。
@@ -171,7 +171,7 @@ export default function AccountProfileAddressScreen() {
           <div className="ml-4">
             <Text fontSize={28}>表</Text>
           </div>
-          <div className="ml-8">
+          <div className="ml-6">
             <InputFile
               title="ファイルを選択"
               color={colors.lightBlue}
@@ -182,7 +182,7 @@ export default function AccountProfileAddressScreen() {
                 })
               }
               fontSize={22}
-              fontColor={colors.primary}
+              fontColor={colors.darkBlue}
               outlineColor={colors.primary}
               boxShadowColor={colors.gray[1]}
               fontWeight={600}
@@ -195,7 +195,7 @@ export default function AccountProfileAddressScreen() {
           <div className="ml-4">
             <Text fontSize={28}>裏</Text>
           </div>
-          <div className="ml-8">
+          <div className="ml-6">
             <InputFile
               title="ファイルを選択"
               color={colors.lightBlue}
@@ -206,7 +206,7 @@ export default function AccountProfileAddressScreen() {
                 })
               }
               fontSize={22}
-              fontColor={colors.primary}
+              fontColor={colors.darkBlue}
               outlineColor={colors.primary}
               boxShadowColor={colors.gray[1]}
               fontWeight={600}

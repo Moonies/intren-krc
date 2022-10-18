@@ -7,7 +7,7 @@ export type ListItemTypeProps = {
 }
 export default function ListItem({
   size = 14,
-  color = colors.primary,
+  color = colors.darkBlue,
 }: ListItemTypeProps) {
   return <styled.ListItem size={size} color={color} />
 }

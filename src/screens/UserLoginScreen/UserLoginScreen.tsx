@@ -11,18 +11,29 @@ import styled from './UserLoginScreen.style'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { setLoader } from 'components/AppLoading/store'
+import { setUser } from 'store/user'
 export default function UserLoginScreen() {
   const [userName, setUserName] = useState<string>()
   const [password, setPassword] = useState<string>()
   const navigation = useNavigate()
   const dispatch = useDispatch()
-  const onClickLogin = useCallback(async () => {
+  const onClickLogin = useCallback(() => {
     //check auth
     if (userName === undefined || password === undefined) return
     try {
       dispatch(setLoader(true))
-      const user = await signInWithEmailAndPassword(auth, userName, password)
-      console.log('success' + user)
+      signInWithEmailAndPassword(auth, userName, password).then(
+        async result => {
+          const accessToken = await result.user.getIdToken()
+          dispatch(
+            setUser({
+              accessToken: accessToken,
+              uid: result.user.uid,
+              email: result.user.email,
+            })
+          )
+        }
+      )
       navigation('/AccountLogin')
     } catch (error) {
       console.log(error)

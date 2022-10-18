@@ -63,10 +63,10 @@ export default function AccountProfileScreen() {
         <div className="mt-4">
           <RoundButton
             title="次へ"
-            fontSize={24}
+            fontSize={32}
             color={colors.darkBlue}
             boxShadowColor={colors.gray[1]}
-            width={256}
+            width={188}
             onClick={() => navigation('/AccountProfileAddress')}
           />
         </div>

@@ -32,7 +32,7 @@ export default function AccountProfileResultScreen() {
             <div className="flex w-full">
               <Text fontSize={22}>郵便番号</Text>
             </div>
-            <div className="flex flex-col mt-2 items-start ml-12 text-start">
+            <div className="flex flex-col mt-2 items-start ml-10 text-start">
               <Text fontSize={22}>
                 {accountProfileResultData?.postCode || '103-0011'}
               </Text>
@@ -47,7 +47,7 @@ export default function AccountProfileResultScreen() {
             <div className="flex w-full">
               <Text fontSize={22}>住所</Text>
             </div>
-            <div className="flex flex-col mt-2 items-start ml-12 text-start">
+            <div className="flex flex-col mt-2 items-start ml-10 text-start">
               <Text fontSize={22}>
                 {accountProfileResultData?.address ||
                   '東京都中央区日本橋大伝馬町１２－１２'}
@@ -63,7 +63,7 @@ export default function AccountProfileResultScreen() {
             <div className="flex w-full">
               <Text fontSize={22}>携帯番号</Text>
             </div>
-            <div className="flex flex-col mt-2 items-start ml-12 text-start">
+            <div className="flex flex-col mt-2 items-start ml-10 text-start">
               <Text fontSize={22}>
                 {accountProfileResultData?.mobileNumber || '999-9999-9999'}
               </Text>
@@ -78,7 +78,7 @@ export default function AccountProfileResultScreen() {
             <div className="flex w-full">
               <Text fontSize={22}>ご自宅電話番号</Text>
             </div>
-            <div className="flex flex-col mt-2 items-start ml-12 text-start">
+            <div className="flex flex-col mt-2 items-start ml-10 text-start">
               <Text fontSize={22}>
                 {accountProfileResultData?.addressNumber || '登録無し'}
               </Text>
@@ -93,7 +93,7 @@ export default function AccountProfileResultScreen() {
             <div className="flex w-full">
               <Text fontSize={22}>携帯アドレス</Text>
             </div>
-            <div className="flex flex-col  mt-2 items-start ml-12 text-start">
+            <div className="flex flex-col  mt-2 items-start ml-10 text-start">
               <Text fontSize={22}>登録済み</Text>
             </div>
           </div>

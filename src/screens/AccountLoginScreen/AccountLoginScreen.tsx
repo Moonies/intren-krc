@@ -12,11 +12,12 @@ export default function AccountLoginScreen() {
     <div className="flex flex-1 flex-col">
       <SubHeader />
       <styled.Container className="flex flex-col ">
-        <p className="text-xl font-bold mt-6">受付番号を入力ください。</p>
+        <p className="text-2xl font-bold mt-6">受付番号を入力ください。</p>
         <div className="mt-6">
           <InputText
             onChange={e => setReceiptNumber(e.target.value)}
             placeHolder=""
+            size={298}
           />
         </div>
         <div className="flex justify-center mt-14">
@@ -25,7 +26,7 @@ export default function AccountLoginScreen() {
             fontSize={34}
             color={colors.darkBlue}
             boxShadowColor={colors.gray[1]}
-            width={198}
+            width={190}
             onClick={() =>
               navigation('/AccountProfile', { state: receiptNumber })
             }
