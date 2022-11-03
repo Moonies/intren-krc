@@ -5,6 +5,7 @@ import styled from './AccuntLoginScreen.style'
 import { colors } from 'theme'
 import InputText from 'components/InputText'
 import { useNavigate } from 'react-router-dom'
+import Text from 'components/Text'
 export default function AccountLoginScreen() {
   const [receiptNumber, setReceiptNumber] = useState('')
   const navigation = useNavigate()
@@ -12,7 +13,11 @@ export default function AccountLoginScreen() {
     <div className="flex flex-1 flex-col">
       <SubHeader />
       <styled.Container className="flex flex-col ">
-        <p className="text-2xl font-bold mt-6">受付番号を入力ください。</p>
+        <div className="mt-6">
+          <Text fontSize={22} fontWeight={700}>
+            受付番号を入力ください。
+          </Text>
+        </div>
         <div className="mt-6">
           <InputText
             onChange={e => setReceiptNumber(e.target.value)}
@@ -26,7 +31,7 @@ export default function AccountLoginScreen() {
             fontSize={34}
             color={colors.darkBlue}
             boxShadowColor={colors.gray[1]}
-            width={190}
+            width={168}
             onClick={() =>
               navigation('/AccountProfile', { state: receiptNumber })
             }

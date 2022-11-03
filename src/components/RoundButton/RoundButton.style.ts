@@ -14,7 +14,7 @@ const Button = styled.button<{
   background-color: ${props => props.color};
   color: ${props => props.fontColor};
   font-size: ${props => props.fontSize || fontSizes[2]}px;
-  border-radius: 24px;
+  border-radius: 28px;
   height: ${props => props.height}px;
   width: ${props => props.width || '256'}px;
   box-shadow: 0px 7px 8px ${props => props.boxShadowColor};

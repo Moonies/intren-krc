@@ -66,7 +66,7 @@ export default function AccountProfileScreen() {
             fontSize={32}
             color={colors.darkBlue}
             boxShadowColor={colors.gray[1]}
-            width={188}
+            width={168}
             onClick={() => navigation('/AccountProfileAddress')}
           />
         </div>

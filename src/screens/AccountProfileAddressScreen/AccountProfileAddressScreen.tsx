@@ -19,7 +19,7 @@ export default function AccountProfileAddressScreen() {
     <div className="flex flex-1 flex-col">
       <SubHeader />
       <div className="flex justify-center font-semibold mt-2">
-        <Text fontSize={24}>変更内容を入力ください。</Text>
+        <Text fontSize={22}>変更内容を入力ください。</Text>
       </div>
       <SubHeader height={2} />
       <styled.Container>

@@ -6,18 +6,21 @@ export type TextTypeProps = {
   color?: string
   children: ReactNode
   textDecoration?: string
+  fontWeight?: number
 }
 export default function Text({
   fontSize = fontSizeDefault,
   color = colors.text,
   children,
   textDecoration = 'none',
+  fontWeight = 400,
 }: TextTypeProps) {
   return (
     <styled.Text
       fontSize={fontSize}
       color={color}
       textDecoration={textDecoration}
+      fontWeight={fontWeight}
     >
       {children}
     </styled.Text>

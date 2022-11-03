@@ -4,7 +4,7 @@ const HeaderTitle = styled.div`
   background-color: ${colors.primary};
   height: 56px;
   color: ${colors.white};
-  font-size: 28px;
+  font-size: 30px;
 `
 
 export default {
